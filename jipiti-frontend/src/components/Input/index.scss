@@ -1,0 +1,42 @@
+.chat-input {
+  background-color: rgba(180, 180, 180, 0.25);
+  height: 20%;
+  align-items: center;
+  padding: 2vh 3vh;
+
+  .chat-input-text {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    textarea {
+      resize: none; 
+      width: 95%;
+      height: 6em;
+      border: none;
+      border-radius: 5px;
+      padding: 1em;
+    }
+  }
+
+  .chat-input-send {
+    align-items: center;
+    width: 5%;
+    margin: 0 1px;
+
+    img {
+      width: 2em;
+      margin-left: 1em;
+      filter: contrast(0);
+    }
+
+    .enabled {
+      filter: contrast(70%);
+
+      &:hover {
+        cursor: pointer;
+        filter: invert(45%) sepia(96%) saturate(3109%) hue-rotate(164deg) brightness(98%) contrast(101%);
+      }
+    }
+  }
+}

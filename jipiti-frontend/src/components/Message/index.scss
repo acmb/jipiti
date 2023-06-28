@@ -1,0 +1,27 @@
+.text-block {
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 5px;
+
+  .text-block-name {
+    font-weight: bold;
+    font-size: small;
+  }
+}
+
+.user-block {
+  background: lightblue;
+}
+
+.assistant-block {
+  background: lightgrey;
+}
+
+.typing-block {
+  background: yellowgreen;
+}
+
+.error-block {
+  background: lightcoral;
+}

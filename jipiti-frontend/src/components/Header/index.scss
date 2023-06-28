@@ -1,0 +1,21 @@
+.chat-header {
+  background-color: rgba(180, 180, 180, 0.4);
+  padding: 4vh;
+  align-items: center;
+
+  .chat-header-title {
+    font-size: 2em;
+    width: 100%;
+  }
+
+  .chat-header-logout {
+    width: fit-content;
+    height: fit-content;
+    color: grey;
+
+    &:hover {
+      cursor: pointer;
+      color: black;
+    }
+  }
+}
