@@ -51,7 +51,7 @@ const send = async (messages: Message[]): Promise<GPTMessage> => {
 
     const data = await response.json() as GPTResponse;
 
-    await Log.create({ target: "openapi", request, response: data });
+    Log.create({ target: "openapi", request, response: data });
 
     return data.choices[0].message;
 };

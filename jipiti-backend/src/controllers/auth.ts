@@ -8,7 +8,7 @@ const login = async (req: Request, res: Response) => {
     const body = req.body;
     const credential = jwt.decode(body.credential) as any;
 
-    await Log.create({ source: "google", request: { body, credential } });
+    Log.create({ source: "google", request: { body, credential } });
 
     const { name, email, picture } = credential;
 

@@ -44,7 +44,7 @@ const sendUserMessage = async (req: any, res: any) => {
     const { text } = req.body;
 
     try {
-        MessageService.create({ userId, text, source: "user" });
+        await MessageService.create({ userId, text, source: "user" });
 
         const messages = await MessageService.get({ userId });
 
@@ -52,7 +52,6 @@ const sendUserMessage = async (req: any, res: any) => {
 
         const response = await MessageService.create({
             userId,
-            // text: choice.content.replace(/\n/g, ""),
             text: content,
             source: role
         });

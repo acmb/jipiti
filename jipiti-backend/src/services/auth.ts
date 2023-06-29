@@ -16,7 +16,7 @@ const login = async (req: Request, res: Response) => {
         user = await UserService.upsert(email, { name, picture });
     } catch (error) {
         console.error(error);
-        await Log.create({ source: "google", request: req.body });
+        Log.create({ source: "google", request: req.body });
         res.status(400).json({ message: error.message })
     }
 
